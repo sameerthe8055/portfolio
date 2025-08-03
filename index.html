@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sameer Basha Portfolio</title>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./src/output.css">
+
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body class="bg-slate-900 text-slate-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-700">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold text-blue-400">Sameer.dev</h1>
+      <ul class="hidden md:flex space-x-6 text-slate-300">
+        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#experience" class="hover:text-blue-400 transition">Experience</a></li>
+        <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="#achievements" class="hover:text-blue-400 transition">Achievements</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+      <button class="md:hidden text-blue-400" id="menu-toggle">☰</button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+      <ul class="flex flex-col space-y-4 p-4 text-slate-300">
+        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="#experience" class="hover:text-blue-400 transition">Experience</a></li>
+        <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+        <li><a href="#achievements" class="hover:text-blue-400 transition">Achievements</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Landing Section -->
+  <section
+    class="relative flex flex-col md:flex-row items-center justify-center h-screen overflow-hidden md:gap-6 px-6 mb-8">
+    <!-- Decorative Shapes -->
+    <div class="absolute top-10 left-10 w-32 h-32 bg-blue-500 opacity-40 rounded-full blur-xl animate-float"></div>
+    <div class="absolute bottom-10 right-10 w-40 h-40 bg-blue-300 opacity-40 rounded-full blur-xl animate-float"
+      style="animation-delay: 4s;"></div>
+
+
+
+    <!-- Profile Image -->
+    <div class="z-10 md:w-1/3 flex justify-start mb-6 md:mb-0 order-1 md:order-2">
+      <img src="./src/cinematic_mypic.jpg" alt="Profile" class="w-20 rounded-lg md:w-80 md:ml-8 animate-neon-cycle">
+
+    </div>
+
+    <!-- Intro Text -->
+    <div class="z-10 md:w-2/3 text-center md:text-left md:ml-8 order-2 md:order-1">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Sameer Basha</h1>
+      <p class="text-lg text-blue-400 mb-6">Aspiring Python Developer | Competitive Programmer | Tech Enthusiast</p>
+      <p class="max-w-xl mb-8 text-slate-300">To secure a challenging role in the IT industry where I can apply my
+        problem-solving abilities, programming knowledge, and collaborative skills to deliver effective solutions, while
+        continuously learning and growing in a dynamic team environment.</p>
+      <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+        <a href="resume.pdf" download
+          class="px-6 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600 transition">Download Resume</a>
+        <a href="#contact"
+          class="px-6 py-2 border border-blue-400 text-blue-400 rounded-lg hover:bg-blue-500 hover:text-white transition">Contact
+          Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- border -->
+  <div class="border-t h-8 md:h-32  border-slate-700"></div>
+  <!-- border closed  -->
+
+  <!-- Experience Section -->
+
+  <section id="experience" class=" max-w-screen-xl mb-8 mx-auto">
+    <div class="gap-16 items-center px-4 mx-auto max-w-screen-xl mb-4 lg:px-6">
+      <div class="font-light text-blue-400 sm:text-lg order-1">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-blue">Experience</h2>
+        <p class="mb-4 font-semibold text-teal-300">
+          I have successfully completed my role as an ATL Tinkering Lab Mentor
+          and a Full Stack Developer Intern (Python).</p>
+        <p class=" text-sky-200 ">In the ATL program, I mentored high school students in electronics, programming, and
+          project development,
+          enhancing their creativity and problem-solving skills while collaborating with educators and technical teams.
+          <br>
+          During my internship in Python Web Dev, I gained hands-on experience in backend development, REST API
+          integration, and agile
+          workflows, applying industry best practices.
+          This combination of technical expertise, mentoring ability, and real-world project execution has equipped me
+          with adaptability, collaboration skills, and problem-solving capabilities highly valued by leading IT firms.
+        </p>
+      </div>
+    </div>
+
+    <!-- experience descript (column-2) -->
+    <section id="projects" class="py-10 max-w-7xl mx-auto">
+      <div class="container w-full px-4 grid md:grid-cols-3 gap-8">
+        <!--  FSD -->
+        <div class="order-1 flex-row gap-4 ">
+          <!-- Row 1: Internship -->
+          <div class="bg-slate-700 p-6 rounded-lg shadow hover:scale-105 transition-transform">
+            <!-- Image -->
+            <img
+              class="w-20 h-20 md:w-32 md:h-32  rounded-lg object-cover flex-shrink-0 justify-center mx-auto md:mx-0 "
+              src="./src/python fsd.png" alt="atl">
+
+            <!-- Description -->
+            <div class="ml-4">
+              <h3 class="text-2xl font-semibold text-teal-300 mb-3">Full Stack Developer Intern (Python) –
+                2024</h3>
+              <ul class="list-disc list-inside text-slate-300 space-y-1 mb-4">
+                <li>Completed a short-term internship via <strong>Eduskills</strong> platform.</li>
+                <li>Covered Python fundamentals, data structures, and problem-solving techniques.</li>
+                <li>Worked with REST API integration and backend development practices.</li>
+                <li>Gained hands-on experience in debugging, clean code writing, and automation.</li>
+              </ul>
+              <p class="readmore text-slate-300 text-sm">
+                This program focused on industry-relevant skills, progressing from core Python programming
+                to real-world
+                applications such as file handling, API usage, and web development fundamentals. Small-scale
+                project work
+                strengthened my logical thinking and reinforced professional software development practices
+                aligned with big
+                IT firms' expectations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <!--  experience ATl  -->
+        <div class="order-2  md: gap-4">
+          <!-- Row 2: ATL Mentor -->
+          <div class="bg-slate-700 p-6 rounded-lg shadow hover:scale-105 transition-transform">
+            <!-- Image -->
+            <img
+              class="w-20 h-20 md:w-32 md:h-32  rounded-lg object-cover flex-shrink-0 justify-center mx-auto md:mx-0 "
+              src="./src/atl_mentor.png" alt="office content 2">
+
+            <!-- Description -->
+            <div class="md: ml-4">
+              <h3 class="text-2xl font-semibold text-teal-300 mb-3">ATL Tinkering Lab Mentor (2024–25)</h3>
+              <ul class="list-disc list-inside text-slate-300 space-y-1 mb-4">
+                <li>Selected as part of a <strong>4-member team</strong> from my college, joining peers from
+                  145 other
+                  colleges (5 members each).</li>
+                <li>Guided high school students in electronics, IoT, and Arduino programming.</li>
+                <li>Conducted hands-on workshops and mentored students for national-level exhibitions.</li>
+                <li>Collaborated with <strong>UNICEF</strong>, Vigyan Ashram, and Samagra Shiksha officials.
+                </li>
+              </ul>
+              <p class="readmore text-slate-300 text-sm">
+                The Atal Tinkering Lab (ATL) initiative, under NITI Aayog’s Atal Innovation Mission, aims to
+                cultivate
+                innovation and problem-solving skills among young learners. In my role, I introduced
+                students to modern
+                technology tools, helped them conceptualize ideas, and guided them through prototype
+                development. My
+                mentoring experience built leadership, communication, and collaborative skills in a
+                multi-institution,
+                large-scale environment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- highlights crousel  -->
+        <div class="order-3  flex-row ">
+          <h4 class="font-semibold text-lg text-teal-300 mt-3"><strong>Some Highlights</strong></h4>
+          <section id="projects" class="py-10 max-w-7xl mx-full order-3 ">
+            <div class="w-full bg-slate-900  shadow shadow-slate-500 overflow-hidden ">
+              <!-- Slides -->
+
+              <div class="rounded-lg">
+                <div id="experience-carousel-slides" class="flex transition-transform duration-700  ease-in-out">
+                  <div class="w-full p-3  shrink-0">
+                    <img src="./src/cinematic_mypic.jpg" class="w-full aspect-[16/9] object-cover rounded-xl"
+                      alt="Slide 1">
+                  </div>
+                  <div class="w-full p-3 shrink-0">
+                    <img src="./src/Hack A Bot Certificate 2024_page-0001.jpg"
+                      class="w-full aspect-[16/9] object-cover rounded-xl" alt="Slide 2">
+                  </div>
+                  <div class="w-full p-3 shrink-0">
+                    <img src="./src/Eduskills shorterm final certificate_page-0001.jpg"
+                      class="w-full aspect-[16/9] object-cover rounded-xl" alt="Slide 3">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls & Dots BELOW image -->
+              <div class="flex flex-col items-center gap-3 py-4 bg-slate-900">
+                <!-- Dynamic text -->
+                <p id="experience-carousel-desc" class="text-slate-500 text-md text-center max-w-lg mt-2 font-bold  ">
+                </p>
+                <div class="flex gap-4">
+                  <button id="experience-prev-btn"
+                    class="bg-slate-900 hover:bg-indigo-900 rounded-full text-white px-5 py-2 text-lg font-bold shadow hover:scale-110">
+                    ‹ Prev
+                  </button>
+                  <button id="experience-next-btn"
+                    class="bg-slate-900 hover:bg-indigo-900 rounded-full text-white px-5 py-2  text-lg font-bold shadow hover:scale-110">
+                    Next ›
+                  </button>
+                </div>
+                <div id="experience-carousel-dots" class="flex space-x-2">
+                  <button class="w-3 h-3 rounded-full bg-blue-400 hover:scale-110"></button>
+                  <button class="w-3 h-3 rounded-full bg-slate-500 hover:scale-110"></button>
+                  <button class="w-3 h-3 rounded-full bg-slate-500 hover:scale-110"></button>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+    </section>
+  </section>
+  <!-- test secrtion  -->
+
+  <!-- border -->
+  <div class="border-t h-8 md:h-32 border-slate-700"></div>
+  <!-- border closed  -->
+
+  <!-- Skills Section -->
+
+  <section id="skills" class="py-10 mb-8 max-w-7xl mx-auto ">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-400 mb-8">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Programming Languages -->
+        <div class="bg-slate-800 p-6 rounded-lg shadow hover:shadow-blue-500/30 transition-shadow">
+          <h4 class="font-semibold text-lg text-teal-300 mb-3">Programming Languages</h4>
+          <ul class="list-disc ml-4 text-slate-300 space-y-1 text-sm">
+            <li>Python – Scripting, automation, backend</li>
+            <li>JavaScript – Web interactivity, basic frontend frameworks</li>
+            <li>C – Procedural programming, microcontroller projects</li>
+          </ul>
+        </div>
+
+        <!-- Hard Skills -->
+        <div class="bg-slate-800 p-6 rounded-lg shadow hover:shadow-blue-500/30 transition-shadow">
+          <h4 class="font-semibold text-lg text-teal-300 mb-3">Hard Skills</h4>
+          <ul class="list-disc ml-4 text-slate-300 space-y-1 text-sm">
+            <li>Data Structures & Algorithms – Problem-solving</li>
+            <li>Django – Web application backend development</li>
+            <li>HTML & CSS – Semantic structure, responsive design basics</li>
+            <li>Git – Version control & collaborative workflows</li>
+            <li>Linux – Command-line proficiency</li>
+            <li>MS Office – Documentation & presentations</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="bg-slate-800 p-6 rounded-lg shadow hover:shadow-blue-500/30 transition-shadow">
+          <h4 class="font-semibold text-lg text-teal-300 mb-3">Soft Skills</h4>
+          <ul class="list-disc ml-4 text-slate-300 space-y-1 text-sm">
+            <li>Teamwork – Collaborating in group projects & events</li>
+            <li>Quick Learner – Adapting to new technologies</li>
+            <li>Problem-Solving – Logical thinking & decision-making</li>
+            <li>Communication – Clear articulation of ideas</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- border -->
+  <div class="border-t h-8 md:h-32 border-slate-700"></div>
+  <!-- border closed  -->
+
+  <!-- Projects Section -->
+  <section id="projects" class="pb-10 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-blue-400 mb-8">Projects</h2>
+    <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+
+      <!-- Project Card 1&2 -->
+      <div class="order-1 grid md:grid-2 gap-4 ">
+        <!-- Project 1 (portfolio)  -->
+        <div class="bg-slate-700 p-6 rounded-lg shadow hover:scale-105 transition-transform">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg text-teal-300">Personal Portfolio Website</h3>
+            <a href="https://github.com/yourusername/portfolio-website" target="_blank"
+              class="text-slate-300 hover:text-blue-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 
+          0 5.303 3.438 9.8 8.205 11.385 
+          .6.113.82-.258.82-.577v-2.234
+          c-3.338.726-4.033-1.416-4.033-1.416
+          -.546-1.387-1.333-1.756-1.333-1.756
+          -1.09-.744.083-.729.083-.729
+          1.205.084 1.84 1.236 1.84 1.236
+          1.07 1.835 2.809 1.305 3.495.998
+          .108-.775.418-1.305.762-1.605
+          -2.665-.305-5.466-1.334-5.466-5.93
+          0-1.31.469-2.381 1.236-3.221
+          -.123-.303-.536-1.524.117-3.176 0 0 
+          1.008-.322 3.301 1.23.957-.266 
+          1.983-.399 3.003-.404 1.02.005 
+          2.047.138 3.006.404 2.291-1.552 
+          3.297-1.23 3.297-1.23 
+          .655 1.652.242 2.873.118 3.176 
+          .77.84 1.235 1.911 1.235 3.221 
+          0 4.609-2.804 5.624-5.475 5.921 
+          .43.372.823 1.102.823 2.222v3.293 
+          c0 .319.218.694.825.576 
+          C20.565 22.092 24 17.592 24 12.297 
+          24 5.373 18.627.297 12 .297z" />
+              </svg>
+            </a>
+          </div>
+          <ul class="list-disc ml-4 text-slate-300 text-sm space-y-1">
+            <li>Designed & developed a fully responsive personal portfolio website using <strong>Tailwind CSS</strong>.
+            </li>
+            <li>Implemented an aesthetic slate-dark theme with animated UI elements.</li>
+            <li>Showcased professional experiences, projects, and skills interactively.</li>
+            <li>Added a downloadable resume feature and smooth scroll navigation.</li>
+            <li>Optimized for performance & accessibility across devices.</li>
+          </ul>
+        </div>
+
+        <!-- project 3(smart irrigation) -->
+        <div class="bg-slate-700 p-6 rounded-lg shadow hover:scale-105 transition-transform">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg text-teal-300">Smart Irrigation System</h3>
+          </div>
+          <ul class="list-disc ml-4 text-slate-300 text-sm space-y-1">
+            <li>Automated irrigation system using ESP32 & sensors</li>
+            <li>Monitors soil moisture & controls water pump</li>
+            <li>LCD display for real-time monitoring</li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Project Card 3& 4 -->
+      <div class="order-2 grid md:grid-2 gap-4">
+        <!-- project 2(uipath)  -->
+        <div class="bg-slate-700 p-6 rounded-lg shadow hover:scale-105 transition-transform">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg text-teal-300">Language Translator Bot (UiPath)</h3>
+            <a href="https://github.com/sameerthe8055/Automation_Marshals" target="_blank"
+              class="text-slate-300 hover:text-blue-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 
+      0 5.303 3.438 9.8 8.205 11.385 
+      .6.113.82-.258.82-.577v-2.234
+      c-3.338.726-4.033-1.416-4.033-1.416
+      -.546-1.387-1.333-1.756-1.333-1.756
+      -1.09-.744.083-.729.083-.729
+      1.205.084 1.84 1.236 1.84 1.236
+      1.07 1.835 2.809 1.305 3.495.998
+      .108-.775.418-1.305.762-1.605
+      -2.665-.305-5.466-1.334-5.466-5.93
+      0-1.31.469-2.381 1.236-3.221
+      -.123-.303-.536-1.524.117-3.176 0 0 
+      1.008-.322 3.301 1.23.957-.266 
+      1.983-.399 3.003-.404 1.02.005 
+      2.047.138 3.006.404 2.291-1.552 
+      3.297-1.23 3.297-1.23 
+      .655 1.652.242 2.873.118 3.176 
+      .77.84 1.235 1.911 1.235 3.221 
+      0 4.609-2.804 5.624-5.475 5.921 
+      .43.372.823 1.102.823 2.222v3.293 
+      c0 .319.218.694.825.576 
+      C20.565 22.092 24 17.592 24 12.297 
+      24 5.373 18.627.297 12 .297z" />
+              </svg>
+            </a>
+
+          </div>
+          <ul class="list-disc ml-4 text-slate-300 text-sm space-y-1">
+            <li>Real-time language translation using UiPath automation</li>
+            <li>Generates summary report of all translations</li>
+            <li>Won 1st Prize in Hackathon event</li>
+          </ul>
+
+        </div>
+        <!-- project 4 -->
+        <div class="bg-slate-700 p-6 rounded-lg shadow hover:scale-105 transition-transform">
+          <div class="flex justify-between items-center mb-3">
+            <h3 class="font-semibold text-lg text-teal-300">IoT Home Automation</h3>
+          </div>
+          <ul class="list-disc ml-4 text-slate-300 text-sm space-y-1">
+            <li>Remote control of appliances using IoT protocols</li>
+            <li>Secure wireless communication between devices</li>
+            <li>Energy-efficient operation & monitoring</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Carousel -->
+      <section id="projects" class="py-10 max-w-7xl mx-full order-3">
+        <h2 class="text-3xl font-bold text-blue-400  mb-8">Some Highlights</h2>
+        <div class="w-full container mx-auto max-w-3xl  px-4">
+
+          <div class="w-full bg-slate-850 shadow shadow-slate-600 overflow-hidden ">
+            <!-- Slides -->
+            <div class="rounded-lg">
+              <div id="projects-carousel-slides" class="flex transition-transform duration-700  ease-in-out">
+                <div class="w-full p-3  shrink-0">
+                  <img src="./src/cinematic_mypic.jpg" class="w-full aspect-[16/9] object-cover rounded-xl"
+                    alt="Slide 1">
+                </div>
+                <div class="w-full p-3 shrink-0">
+                  <img src="./src/Hack A Bot Certificate 2024_page-0001.jpg"
+                    class="w-full aspect-[16/9] object-cover rounded-xl" alt="Slide 2">
+                </div>
+                <div class="w-full p-3 shrink-0">
+                  <img src="./src/Eduskills shorterm final certificate_page-0001.jpg"
+                    class="w-full aspect-[16/9] object-cover rounded-xl" alt="Slide 3">
+                </div>
+              </div>
+            </div>
+
+            <!-- Controls & Dots BELOW image -->
+            <div class="flex flex-col items-center gap-3 py-4 bg-slate-900">
+              <!-- Dynamic text -->
+              <p id="projects-carousel-desc" class="text-slate-500 text-md text-center max-w-lg mt-2 font-bold  "></p>
+              <div class="flex gap-4">
+                <button id="projects-prev-btn"
+                  class="bg-slate-900 hover:bg-indigo-900 rounded-full text-white px-5 py-2 text-lg font-bold shadow hover:scale-110">
+                  ‹ Prev
+                </button>
+                <button id="projects-next-btn"
+                  class="bg-slate-900 hover:bg-indigo-900 rounded-full text-white px-5 py-2  text-lg font-bold shadow hover:scale-110">
+                  Next ›
+                </button>
+              </div>
+              <div id="projects-carousel-dots" class="flex space-x-2">
+                <button class="w-3 h-3 rounded-full bg-blue-400 hover:scale-110"></button>
+                <button class="w-3 h-3 rounded-full bg-slate-500 hover:scale-110"></button>
+                <button class="w-3 h-3 rounded-full bg-slate-500 hover:scale-110"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    </div>
+  </section>
+
+  <!-- border -->
+  <div class="border-t h-8 md:h-32 border-slate-700"></div>
+  <!-- border closed  -->
+
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-10 mb-8 max-w-7xl mx-auto ">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-blue-400 mb-8">Achievements</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- content#2 -->
+        <div class="bg-slate-800 p-6 rounded-lg shadow hover:shadow-blue-500/30 transition-shadow">
+          <h4 class="font-semibold text-lg text-teal-300 mb-3">👨‍🏫 <strong>ATL Lab Mentorship Certification</strong>
+          </h4>
+          <ul class="list-disc ml-4 text-slate-300 text-sm space-y-1">
+            <li>
+              Successfully mentored high school students in
+              electronics, IoT, and Arduino programming under the <em>Atal Tinkering Lab</em> initiative.
+              <p class="ml-5 mt-1 text-slate-400">
+                Guided multiple student teams in project ideation, prototype building, and preparing for exhibitions.
+                Developed clear, engaging presentation slides and project documentation, ensuring concepts were
+                communicated effectively to both students and evaluators.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 p-6 rounded-lg shadow hover:shadow-blue-500/30 transition-shadow">
+          <h4 class="font-semibold text-lg text-teal-300 mb-3">🥇 <strong>1st Prize – UiPath Hack-a-Bot 2024</strong>
+          </h4>
+          <ul class="list-disc ml-4 text-slate-300 text-sm space-y-1">
+            <li>
+              Led my team to victory in a competitive automation hackathon.
+              <p class="ml-5 mt-1 text-slate-400">
+                Designed and implemented a real-time language translation bot with automated summary report generation
+                using UiPath. <br>
+                Delivered a professional and impactful PPT presentation to the judges, demonstrating strong storytelling
+                and technical clarity. <br>
+                Produced high-quality documentation that clearly outlined project goals, workflow, and technical
+                details, earning praise for its clarity and completeness.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+
+  <section id="contact" class="py-10  bg-slate-800 mx-auto">
+    <div class="max-w-7xl mx-auto mb-8">
+      <h2 class="text-3xl font-bold text-blue-400 max-w-xl ">Contact Me</h2>
+
+    </div>
+    <div class="container  px-4  max-w-7xl flex-row md:flex gap-4 mx-auto">
+      <!-- adrees and mail  -->
+      <div class="p-6 ">
+        <h4 class="font-semibold text-lg text-teal-300 mb-3"><strong>Address</strong></h4>
+        <ul class="mt-4 ml-8 ">
+          <li> 📧
+            <a href="mailto:pingsameer@zohomail.in">pingsameer@zohomail.in</a>
+          </li>
+          <li>
+            <Address>🏖️ Nandyal, Andhra Pradesh </Address>
+          </li>
+          </li>
+          <address>📍 Pin: 518501</address>
+          </li>
+        </ul>
+      </div>
+
+      <!-- form for contact & query  -->
+      <div class="border-b mb-4 md:mb-0  md:border-r border-slate-500">
+      </div>
+      <form id="contact-form" method="POST" class="bg-slate-800 p-6 rounded-lg shadow space-y-4 ">
+        <h4 class="font-semibold text-lg text-teal-300 inline "><strong>Direct Message</strong></h4>
+        <!-- Name & Email -->
+        <div class="grid md:grid-cols-2 gap-5 mt-4 ml-8 ">
+          <div class="pr-4 ">
+            <label for="name" class="block text-slate-300 ">Your Name</label>
+            <input type="text" name="name" id="name" placeholder="enter your name" required
+              class="w-full px-4 py-2 rounded-lg bg-slate-700 text-slate-100 focus:ring-2 focus:ring-blue-400 outline-none">
+          </div>
+          <div class=" ">
+            <label for="email" class="block text-slate-300  ">Your Email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email" required
+              class="w-full px-4 py-2 rounded-lg bg-slate-700 text-slate-100 focus:ring-2 focus:ring-blue-400 outline-none">
+          </div>
+        </div>
+        <!-- Message -->
+        <div class="mt-4 ml-8 ">
+          <label for="message" class="block text-slate-300 ">Message</label>
+          <textarea name="message" id="message" rows="3" placeholder="enter your query or message" required
+            class="w-full px-4 py-2 rounded-lg bg-slate-700 text-slate-100 focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submit-btn"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 mt-4 ml-8  rounded-lg shadow transition w-auto">
+          Send Message
+        </button>
+
+        <!-- Status Message -->
+        <p id="form-status" class="text-center mt-3 hidden"></p>
+      </form>
+      <div class="border-b mb-4 md:mb-0  md:border-r border-slate-500">
+      </div>
+      <div class="">
+        <h4 class="ml-8 font-semibold text-lg text-teal-300 mb-3"><strong>Quick Links</strong></h4>
+        <div class="flex space-x-6 mt-4 ml-8 justify-center">
+          <!-- GitHub -->
+          <a href="https://github.com/yourusername" target="_blank"
+            class="text-slate-300 hover:text-blue-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 
+      0 5.303 3.438 9.8 8.205 11.385 
+      .6.113.82-.258.82-.577v-2.234
+      c-3.338.726-4.033-1.416-4.033-1.416
+      -.546-1.387-1.333-1.756-1.333-1.756
+      -1.09-.744.083-.729.083-.729
+      1.205.084 1.84 1.236 1.84 1.236
+      1.07 1.835 2.809 1.305 3.495.998
+      .108-.775.418-1.305.762-1.605
+      -2.665-.305-5.466-1.334-5.466-5.93
+      0-1.31.469-2.381 1.236-3.221
+      -.123-.303-.536-1.524.117-3.176 0 0 
+      1.008-.322 3.301 1.23.957-.266 
+      1.983-.399 3.003-.404 1.02.005 
+      2.047.138 3.006.404 2.291-1.552 
+      3.297-1.23 3.297-1.23 
+      .655 1.652.242 2.873.118 3.176 
+      .77.84 1.235 1.911 1.235 3.221 
+      0 4.609-2.804 5.624-5.475 5.921 
+      .43.372.823 1.102.823 2.222v3.293 
+      c0 .319.218.694.825.576 
+      C20.565 22.092 24 17.592 24 12.297 
+      24 5.373 18.627.297 12 .297z" />
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/yourusername" target="_blank"
+            class="text-slate-300 hover:text-blue-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5C1.11 6 
+      0 4.881 0 3.5 0 2.119 1.11 1 2.5 1c1.37 0 
+      2.48 1.119 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.839v2.165h.054
+      c.535-1.014 1.842-2.084 3.793-2.084C20.338 8.081 21 10.958 
+      21 15.154V24h-4v-7.885c0-1.88-.034-4.297-2.621-4.297
+      -2.623 0-3.027 2.048-3.027 4.161V24H7.999V8z" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark-900 text-center border-t border-slate-700">
+    <p class="text-sm text-slate-500">&copy; 2025 Sameer Basha. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
